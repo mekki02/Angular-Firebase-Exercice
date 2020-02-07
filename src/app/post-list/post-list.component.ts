@@ -11,7 +11,7 @@ import { selectPosts } from '../store/post.selectors';
 })
 export class PostListComponent implements OnInit {
 
-  protected posts;
+  public posts;
 
   constructor(public router: Router, private store: Store<AppState>) {}
 

@@ -10,7 +10,7 @@ import { PostListService } from '../post-list/post-list.service';
 })
 export class NewPostComponent implements OnInit {
 
-  private newPostForm: FormGroup; 
+  public newPostForm: FormGroup; 
 
   constructor(private fb: FormBuilder, private postsService: PostListService) { }
 
