@@ -1,0 +1,20 @@
+<mat-card>
+    <mat-card-header fxLayout="row" fxLayoutAlign="center">
+        <mat-card-title>{{post.title}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content fxLayout="row" fxLayoutAlign="center">
+        <p>{{post.content}}</p>
+    </mat-card-content>
+    <mat-card-actions fxLayout="row" fxLayoutAlign="center">
+            <p>Love Its : {{post.loveIts}}</p>
+            <button mat-icon-button (click)="increaseLoveIts()">
+                <mat-icon color="accent">thumb_up</mat-icon>
+            </button>
+            <button mat-icon-button (click)="decreaseLoveIts()">
+                <mat-icon color="primary">thumb_down</mat-icon>
+            </button>
+    </mat-card-actions>
+    <button mat-button (click)="deletePost()">
+        Remove Post <mat-icon>remove_circle_outline</mat-icon>
+    </button>
+</mat-card>

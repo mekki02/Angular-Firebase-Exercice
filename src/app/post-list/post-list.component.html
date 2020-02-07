@@ -1,0 +1,8 @@
+<div fxLayout="row" fxLayoutAlign="center">
+    <h1>LIST OF POSTS</h1>
+</div>
+<div fxLayout="row" fxLayoutAlign="space-evenly center">
+    <div *ngFor="let post of posts | async">
+        <app-post-list-item [post]="post"></app-post-list-item>
+    </div>
+</div>
